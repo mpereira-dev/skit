@@ -1,4 +1,5 @@
 const preprocess = require('svelte-preprocess');
+const netlify = require('@sveltejs/adapter-netlify');
 
 /** @type {import('@sveltejs/kit').Config} */
 module.exports = {
@@ -7,6 +8,8 @@ module.exports = {
 	preprocess: preprocess(),
 
 	kit: {
+		// npm run build to build netlify compatible app.
+		adapter: netlify(),
 		// hydrate the <div id="svelte"> element in src/app.html
 		target: '#svelte'
 	}

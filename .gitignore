@@ -3,3 +3,10 @@ node_modules
 /.svelte
 /build
 /functions
+
+# Netlify Adapter Stuff
+build
+functions
+
+# IDE
+.idea
